@@ -1,0 +1,42 @@
+body{
+  margin: 0;
+}
+header {
+  background:#adad85;
+  display:flex;
+  border-bottom: 2px solid black;
+  color: white;
+}
+header p{
+  margin-left: 10%;
+}
+main{
+  display: flex;
+  height: 90vh;
+}
+footer {
+  display:flex;
+  background:#adad85;
+}
+footer p {
+  margin-left: 15%;
+  color: white;
+}
+.buttons{
+  display: flex;
+  height:25%;
+}
+button{
+    background: #1f1f2e ;
+    color: white;
+    padding: 1em 4em;
+    border-radius: 10%;
+}
+.scrollingImg{
+  overflow: scroll;
+  height: 10vh;
+
+}
+.container-inner{
+  width:10000px;
+}

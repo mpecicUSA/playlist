@@ -57,3 +57,10 @@ button{
 h1{
   color: purple;
 }
+a{
+  background: #1f1f2e ;
+  color: white;
+  padding: 1em 4em;
+  border-radius: 10%;
+  text-decoration: none;
+}
