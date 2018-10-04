@@ -1,0 +1,21 @@
+
+header {
+  background:brown;
+  height: 20%;
+  display:flex;
+}
+main {
+  display:flex;
+}
+footer {
+  display:flex;
+}
+.containerLeft{
+  align-self: center;
+
+  width: 50%;
+}
+
+img {
+  width: 50%;
+}
