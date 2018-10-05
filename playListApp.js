@@ -5,7 +5,7 @@ axios.get(albumURL).then(res => {
   console.log(res);
   for(let i=0; i<5; i++){
     let newDiv = document.createElement("div");
-    newDiv.className = "generatedDiv"
+    newDiv.className = `generatedDiv ${res.data.results[i].id}`
     let newImg = document.createElement('img');
     newImg.src = `images/${res.data.results[i].cover_art}`;
     albumHolder.appendChild(newDiv)
