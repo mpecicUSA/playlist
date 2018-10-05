@@ -1,10 +1,12 @@
 const albumURL = "https://lit-fortress-6467.herokuapp.com/object"
 const albumArtHolder = document.querySelector(".container-inner");
 const albumDetails = document.querySelector(".selection");
+const clearButton = document.querySelector("#clear")
 
 let albumSelected = "";
 let newDiv = document.createElement("div");
 let newh4 = document.createElement('h4');
+let albumArtistandName="";
 
 axios.get(albumURL).then(res => {
   console.log(res);
@@ -19,28 +21,30 @@ axios.get(albumURL).then(res => {
   }
 });
 albumArtHolder.addEventListener("click",e =>{
-
-  let albumArtistandName="";
   switch(event.target.id) {
     case "2":
-      albumArtistandName = " Ghost in the Machine: The Police";
+      albumArtistandName = " Ghost in the Machine: The Police <br>";
       break;
     case "6":
-      albumArtistandName= " Red: Black Uhuru";
+      albumArtistandName= " Red: Black Uhuru <br>";
       break;
     case "22":
-      albumArtistandName = " The Division Bell: Pink Floyd"
+      albumArtistandName = " The Division Bell: Pink Floyd <br>"
       break;
     case "18":
-      albumArtistandName = " Thriller: Michael Jackson"
+      albumArtistandName = " Thriller: Michael Jackson <br>"
       break;
     case "55":
-      albumArtistandName = " 21: Adele"
+      albumArtistandName = " 21: Adele <br>";
       break;
   };
-  let text = document.createTextNode(albumArtistandName);
-  newh4.appendChild(text);
+  newh4.innerHTML += albumArtistandName;
   albumDetails.appendChild(newh4);
 
-})
-//event.target.id
+});
+
+clearButton.addEventListener("click", e => {
+  albumArtistandName = " ";
+  newh4.innerHTML= albumArtistandName;
+  albumDetails.appendChild(newh4);
+});
