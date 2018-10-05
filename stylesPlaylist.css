@@ -31,7 +31,10 @@ footer p {
   justify-content: flex-start;
   background-color: lightgrey;
   margin: 1em;
-  height: 15vh;
+  height: 25vh;
+}
+.selection p {
+  display: block; 
 }
 .buttonDiv{
   margin-top: 3em;
