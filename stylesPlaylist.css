@@ -3,19 +3,18 @@ body{
 }
 header {
   background:#adad85;
-  display:flex;
   border-bottom: 2px solid black;
   color: white;
+  height: 5vh;
 }
 header p{
   margin-left: 10%;
 }
 main{
-  display: flex;
-  height: 90vh;
+  height:88vh;
 }
 footer {
-  display:flex;
+  height: 5vh;
   background:#adad85;
 }
 footer p {
@@ -23,14 +22,24 @@ footer p {
   color: white;
 }
 .buttons{
-  display: flex;
   height:25%;
+
 }
-button{
+.selection{
+  display: flex;
+  border: 1px solid black;
+  justify-content: center;
+  margin: 1em;
+}
+.buttons{
     background: #1f1f2e ;
     color: white;
     padding: 1em 4em;
     border-radius: 10%;
+
+}
+.buttonDiv{
+  margin: 1em;
 }
 .scrollingImg{
   overflow: scroll;
@@ -39,4 +48,7 @@ button{
 }
 .container-inner{
   width:10000px;
+}
+a {
+  text-decoration: none;
 }
