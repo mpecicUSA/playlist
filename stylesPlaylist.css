@@ -38,11 +38,12 @@ footer p {
 }
 .scrollingImg{
   overflow: scroll;
-  height: 10vh;
-
+  height: 20vh;
+  margin-left: 1em;
 }
 .container-inner{
   width:10000px;
+  display: inline-flex;
 }
 a {
   text-decoration: none;
@@ -51,4 +52,8 @@ a {
   padding: .5em 3em;
   border-radius: 10%;
   margin-right: 1em;
+}
+.generatedDiv{
+  height: 100px;
+  width: 100px; 
 }
